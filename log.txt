@@ -1,0 +1,74 @@
+1. Estado con mayor acumulado a la fecha: California con 61526 muertes
+Fue California ya que al organizar los datos por acumulado de muertes, fue el estado que tenia mayor acumulado a la fecha
+-------------------------------------------------------------------------
+
+2. Estado con menor acumulado a la fecha: Diamond Princess con 0 muertes
+Fue Diamond Princess ya que al organizar los datos por acumulado de muertes, fue el estado que tenia menor acumulado a la fecha
+-------------------------------------------------------------------------
+
+3. El porcentaje de muertes vs el total de población por estado es:  [
+  { Alabama: 0.2213663159762481 },
+  { Alaska: 0.0468289259711604 },
+  { 'American Samoa': 0 },
+  { Arizona: 0.23734952190063166 },
+  { Arkansas: 0.1897074826595763 },
+  { California: 0.15571384075251854 },
+  { Colorado: 0.10877386982143304 },
+  { Connecticut: 0.2262650945071182 },
+  { Delaware: 0.1660566625999729 },
+  { 'Diamond Princess': 0 },
+  { 'District of Columbia': 0.15586277840988794 },
+  { Florida: 0.16276388895161534 },
+  { Georgia: 0.18862392503340972 },
+  { 'Grand Princess': 0 },
+  { Guam: 0.08281119656089972 },
+  { Hawaii: 0.03383074176196718 },
+  { Idaho: 0.11415365417598129 },
+  { Illinois: 0.19076974019756118 },
+  { Indiana: 0.19745346965094274 },
+  { Iowa: 0.1879514559106454 },
+  { Kansas: 0.16908579027183476 },
+  { Kentucky: 0.14495241706364811 },
+  { Louisiana: 0.22268140941500097 },
+  { Maine: 0.057803382204592725 },
+  { Maryland: 0.14370591893715842 },
+  { Massachusetts: 0.25485661740009397 },
+  { Michigan: 0.18587429458537355 },
+  { Minnesota: 0.12711822331669867 },
+  { Mississippi: 0.24152016582503094 },
+  { Missouri: 0.13757153048025836 },
+  { Montana: 0.1465224770719457 },
+  { Nebraska: 0.11590109222046228 },
+  { Nevada: 0.1767442947694857 },
+  { 'New Hampshire': 0.09516728187092699 },
+  { 'New Jersey': 0.2866410198385759 },
+  { 'New Mexico': 0.19262419586909565 },
+  { 'New York': 0.2679046782231798 },
+  { 'North Carolina': 0.11997424887138584 },
+  { 'North Dakota': 0.1990651679259693 },
+  { 'Northern Mariana Islands': 0.003626867836936022 },
+  { Ohio: 0.16415292879691337 },
+  { Oklahoma: 0.16972578267568805 },
+  { Oregon: 0.0589889791610999 },
+  { Pennsylvania: 0.2034683829208102 },
+  { 'Puerto Rico': 0.060853185630978295 },
+  { 'Rhode Island': 0.25147234984108346 },
+  { 'South Carolina': 0.18324964253209636 },
+  { 'South Dakota': 0.2216673317063411 },
+  { Tennessee: 0.17810353052946082 },
+  { Texas: 0.17253140196016117 },
+  { Utah: 0.06818554703461492 },
+  { Vermont: 0.039263512658075705 },
+  { 'Virgin Islands': 0.02517060073833762 },
+  { Virginia: 0.12561626305324844 },
+  { Washington: 0.0717278627552613 },
+  { 'West Virginia': 0.1485369224734355 },
+  { Wisconsin: 0.1287090587888158 },
+  { Wyoming: 0.12215792756570525 }
+]
+Se calcula la población de cada estado y luego se calcula el porcentaje con la información de muertes 
+usando el numero de muertes por 100 dividido por la población de cada estado
+-------------------------------------------------------------------------
+
+El estado más afectado es  New Jersey
+Ya que tuvo el porcentaje más alto de muertes vs el total de población, es decir, su población se redujo considerablemente.

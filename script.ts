@@ -15,7 +15,7 @@ parse(
     delimiter: ",",
     columns: true,
   },
-  (error, result: any[]) => {
+  (error, result: any[], ) => {
     if (error) {
       console.error(error);
       return;
@@ -94,6 +94,20 @@ parse(
     );
     console.log(
       "-------------------------------------------------------------------------\n"
+    );
+
+    //4. Cual fue el estado más afectado
+    const sortedPercentage: Record<string, number>[] = percentage.sort(
+      (a: Record<string, number>, b: Record<string, number>) => {
+        return b[Object.keys(b)[0]] - a[Object.keys(a)[0]];
+      }
+    );
+    console.log(
+      "El estado más afectado es ",
+      Object.keys(sortedPercentage[0])[0]
+    );
+    console.log(
+      "Ya que tuvo el porcentaje más alto de muertes vs el total de población, es decir, su población se redujo considerablemente."
     );
   }
 );
