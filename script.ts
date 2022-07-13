@@ -62,5 +62,38 @@ parse(
     console.log(
       "-------------------------------------------------------------------------\n"
     );
+
+    // 3. El porcentaje de muertes vs el total de población por estado
+    const populationByState: Record<string, number> = result.reduce(
+      (acc: Record<string, number>, curr: Record<string, number>) => {
+        let previousState: number = acc[curr.Province_State] ?? 0;
+        return {
+          ...acc,
+          [curr.Province_State]: +previousState + +curr.Population,
+        };
+      },
+      {} as Record<string, number>
+    );
+
+    const percentage: Record<string, number>[] = Object.keys(
+      populationByState
+    ).map((state: string) => {
+      const population: number = populationByState[state];
+      const death: number = deathByStates[state];
+      return {
+        [state]: population === 0 ? 0 : (death * 100) / population,
+      };
+    });
+    console.log(
+      "3. El porcentaje de muertes vs el total de población por estado es: ",
+      percentage
+    );
+    console.log(
+      "Se calcula la población de cada estado y luego se calcula el porcentaje con la información de muertes \n" +
+        "usando el numero de muertes por 100 dividido por la población de cada estado"
+    );
+    console.log(
+      "-------------------------------------------------------------------------\n"
+    );
   }
 );
