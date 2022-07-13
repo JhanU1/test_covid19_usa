@@ -15,7 +15,7 @@ parse(
     delimiter: ",",
     columns: true,
   },
-  (error, result: any[], ) => {
+  (error, result: any[]) => {
     if (error) {
       console.error(error);
       return;
@@ -50,5 +50,17 @@ parse(
       "-------------------------------------------------------------------------\n"
     );
 
+    //2. Estado con menor acumulado a la fecha
+    const minStateDeath: [string, number] =
+      sortedDeathByState[sortedDeathByState.length - 1];
+    console.log(
+      `2. Estado con menor acumulado a la fecha: ${minStateDeath[0]} con ${minStateDeath[1]} muertes`
+    );
+    console.log(
+      `Fue ${minStateDeath[0]} ya que al organizar los datos por acumulado de muertes, fue el estado que tenia menor acumulado a la fecha`
+    );
+    console.log(
+      "-------------------------------------------------------------------------\n"
+    );
   }
 );
